@@ -1,0 +1,20 @@
+@model SistemaConsultas.Models.Consulta
+
+<h2>Agendar Consulta</h2>
+
+<form asp-action="Create" class="w-50">
+    <div class="mb-3">
+        <label asp-for="Especialidade" class="form-label"></label>
+        <input asp-for="Especialidade" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="DataHora" class="form-label">Data e Hora</label>
+        <input asp-for="DataHora" type="datetime-local" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Descricao" class="form-label">Descrição</label>
+        <textarea asp-for="Descricao" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

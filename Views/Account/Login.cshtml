@@ -1,0 +1,21 @@
+<h2>Acesso ao Sistema</h2>
+
+@if (ViewBag.Erro != null)
+{
+    <div class="alert alert-danger w-50">@ViewBag.Erro</div>
+}
+
+<form asp-action="Login" method="post" class="w-50">
+    <div class="mb-3">
+        <label class="form-label">E-mail</label>
+        <input name="email" type="email" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Senha</label>
+        <input name="senha" type="password" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-success">Entrar</button>
+    <a asp-action="Cadastro" class="btn btn-link">Não possui conta? Cadastre-se</a>
+</form>
