@@ -32,5 +32,5 @@ Assista ao vídeo abaixo para ver o sistema em pleno funcionamento. A gravação
 [https://www.youtube.com/watch?v=926C63dZ3m4]
 
 ## Desenvolvedores
-*Adler Costa
-*Gustavo Li
+* **Adler Costa
+* **Gustavo Li
